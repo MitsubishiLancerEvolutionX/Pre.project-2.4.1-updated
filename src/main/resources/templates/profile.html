@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body>
+<tr th:object="${user}">
+    <td th:text="${user.firstName}"></td>
+    <td th:text="${user.lastName}"></td>
+    <td th:text="${user.login}"></td>
+    <td th:text="${user.password}"></td>
+    <td th:text="${user.role}"></td>
+    <td th:text="${user.state}"></td>
+</tr>
+<form th:action="@{/login}">
+    <button type="submit">Выход</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="form-style-2-heading">
+        Please Login!
+    </div>
+
+    <div th:switch="${error}">
+        <p th:case="'error'">Логин или пароль введены неверно!</p>
+    </div>
+
+    <form method="post" action="/login">
+        <label for="login">Логин
+            <input class="input-field" type="text" id="login" name="login">
+        </label>
+        <br>
+        <label for="password">Пароль
+            <input class="input-field" type="password" id="password" name="password">
+        </label>
+        <br>
+        <input type="submit" value="Login">
+    </form>
+</div>
+</body>
+</html>
