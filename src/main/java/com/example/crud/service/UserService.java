@@ -49,7 +49,6 @@ public class UserService implements UserDetailsService {
                 .lastName(userForm.getLastName())
                 .login(userForm.getLogin())
                 .password(hashPassword)
-                //.password(userForm.getPassword())
                 .role(Role.USER)
                 .state(State.ACTIVE)
                 .build();
@@ -66,7 +65,6 @@ public class UserService implements UserDetailsService {
                 .lastName(userForm.getLastName())
                 .login(userForm.getLogin())
                 .password(hashPassword)
-                //.password(userForm.getPassword())
                 .role(userForm.getRole())
                 .state(userForm.getState())
                 .build();

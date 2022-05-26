@@ -23,7 +23,6 @@ public class UserForm {
                 .firstName(user.getFirstName())
                 .lastName(user.getLastName())
                 .login(user.getLogin())
-                //.password(user.getPassword())
                 .role(user.getRole())
                 .state(user.getState())
                 .build();
