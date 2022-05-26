@@ -50,8 +50,8 @@ public class CrudController {
     }
 
     @PostMapping("/user-update")
-    public String updateUser(User user) {
-        userService.update(user);
+    public String updateUser(User user, UserForm userForm) {
+        userService.update(user, userForm);
         return "redirect:/users";
     }
 }
